@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 96px;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 3px;
+    animation: 3s bounce, 5s bounce;
+}
+@keyframes bounce {
+    0% {
+      top: 0%;
+    }
+    33% {
+      top: 50%;
+    }
+    67% {
+      top: 30%;
+    }
+    100% {
+      top: 50%;
+    }
+}
+@keyframes pop {
+    0% {
+      color: white
+    }
+    50% {
+      transform: blue;
+    }
+    100% {
+      transform: gray;
+    }
+}
